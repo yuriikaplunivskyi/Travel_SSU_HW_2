@@ -1,0 +1,65 @@
+.category {
+    background-image: url("../img/background/bg_category.png") ;
+    background-position: 90% top;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    width: 100%;
+    height: auto;
+    margin-top: rem(100);
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: rem(65);
+    }
+    &__card {
+            width: rem(250);
+            height: rem(300);
+        &_content{
+            display: flex;
+            flex-direction:column;
+            
+            align-items: center;
+            box-sizing: border-box;
+            position: relative;
+            width: rem(210);
+            height: rem(270);
+            background: #FFFFFF;
+            border-radius: 36px;
+            &:hover{
+                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+            }
+            &:hover::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 100px;
+                height: 100px;
+                left: -35px;
+                bottom: -35px;
+                background: #DF6951;
+                border-radius: 30px 0px 10px;  
+                }
+            
+        }
+    }
+    .plane {
+        margin-top: rem(-50);
+    }
+    .flight{
+        margin-top:rem(5) ;
+    }
+    .custom{
+        margin-top: rem(40);
+    }
+    &__title {
+        margin-top: rem(30);
+
+    }
+    &__text {
+        line-height: rem(26);
+        text-align: center;
+        margin: rem(15) rem(20);
+    }
+}

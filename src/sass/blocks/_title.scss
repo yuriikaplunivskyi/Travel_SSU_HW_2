@@ -1,0 +1,62 @@
+.title{
+    &__promo{
+        font-family: 'Volkhov', normal;
+        font-weight: 700;
+        font-size: rem(84);
+        line-height: rem(89);
+        letter-spacing: -0.04em;
+        color: #181E4B;
+        /* width: prc(545, 1440); */
+        left: rem(650);
+        margin-top: rem(24);
+    }
+    &__promo-subtitle{
+        font-family: 'Poppins', normal;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: rem(30);
+        text-transform: uppercase;
+        color: #DF6951;
+        margin-top: rem(130);
+    }
+    &__block{
+        font-family: 'Poppins', normal;
+        font-weight: 600;
+        font-size: rem(18);
+        line-height: rem(27);
+        text-align: center;
+        color: $title-block-color;
+    }
+    &__offer{
+        font-family: 'Volkhov', normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 64px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $title-offer-color;
+    }
+    &__card{
+        color: $title-card-color;
+        font-family: 'Noto Sans', normal;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+}
+
+.text{
+    font-family: 'Poppins', normal;
+    font-weight: 500;
+    font-size: rem(16);
+    color: $describtion-text-color;
+}
+
+.promo__text {
+    line-height: rem(30);
+    margin-top: rem(30);
+    width: 75%;
+}
+

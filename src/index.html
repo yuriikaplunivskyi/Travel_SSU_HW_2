@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Travel</title>
 </head>
 <body>
-    
+    <header class="promo">
+        <div class="container">
+                <nav class="nav__menu">
+                    <img class="nav__logo" src="img/Logo_header.svg" alt="logo" >
+                    
+                    <a class="nav__link" href="#">Desitnations</a>
+                        
+                    <a class="nav__link" href="#">Hotels</a>    
+                        
+                    <a class="nav__link" href="#">Flights</a>
+                        
+                    <a class="nav__link" href="#">Bookings</a>
+                    
+                    <button class="nav__button" onclick="location.href='#';">
+                        <span>Login</span>
+                    </button>
+            
+                    <button class="nav__button_singup" onclick="location.href='#';">
+                        <span>Sign up</span>
+                    </button>
+                    <option class="nav__lang" value="eng"> EN </option>
+                    <img class="nav__lang_choice" src="../icons/arrow.png" alt="dropdown">
+                </nav>
+
+            <div class="promo__content">
+                <div class="promo__item">
+                    <h3 class="title title__promo-subtitle">Best Destinations around the world</h3>
+
+                    <h1 class="title__promo">Travel, enjoy and live a new and full life</h1>
+
+                    <p class="promo__text text">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+
+                    <div class="promo__content__button">
+                        <button class="promo__content__button_find">Find out more</button>
+                        <div class="promo__content__button_play">
+                            <a href="#"><img src="../icons/Play_button.svg" alt="play">Play Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo__img">
+                    <img class="promo__img_traveller" src="../img/traveller.png" alt="traveller" >
+                    
+                    <img class="promo__img_plane_active" src="../img/plane.svg" alt="plane"  id="planeactive">
+                    <img class="promo__img_plane" src="../img/plane.svg" alt="plane"  id="plane">
+                   
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="category">
+        <div class="container">
+            <h4 class="title__block">CATEGORY</h4>
+            <h3 class="title__offer">We Offer Best Services</h3>
+
+            <div class="category__content">
+                <div class="category__card">
+                    <div class="category__card_content">
+                        <img src="../img/category/weather.svg" alt="weather">
+                        <h5 class="category__title title__card">Calculated Weather</h5>
+                        <p class="category__text text">Built Wicket longer admire do barton vanity itself do in it.</p>
+                    </div>
+                </div>
+
+                <div class="category__card">
+                    <div class="category__card_content">
+                        <img class="plane" src="../icons/category/plane.svg" alt="plane">
+                        <h5 class="category__title title__card flight">Best Flights</h5>
+                        <p class="category__text text">Engrossed listening. Park gate sell they west hard for the.</p>
+                    </div>
+                </div>
+
+                <div class="category__card">
+                    <div class="category__card_content">
+                        <img src="../img/category/voice.svg" alt="mic">
+                        <h5 class="category__title title__card">Local Events</h5>
+                        <p class="category__text text">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                    </div>
+                </div>
+
+                <div class="category__card">
+                    <div class="category__card_content">
+                        <img src="../icons/category/local_events.svg" alt="custome">
+                        <h5 class="category__title title__card custom">Customization</h5>
+                        <p class="category__text text">We deliver outsourced
+                            aviation services for
+                            military customers</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="selling">
+        <div class="container">
+            <h4 class="title__block">Top Selling</h4>
+            <h3 class="title__offer">Top Destinations</h3>
+            <div class="selling__content">
+                <div id="rome" class="selling__card">
+                    <div class="sellcard_text text">
+                        <span>Rome, Italty</span>
+                        <span>$5,42k</span>
+                    </div>
+                </div>
+                <div id="london" class="selling__card">
+                    <!-- <img src="../img/selling/rome.png" alt="rome"> -->
+                </div>
+                <div id="europe" class="selling__card">
+                    <!-- <img src="../img/selling/rome.png" alt="rome"> -->
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

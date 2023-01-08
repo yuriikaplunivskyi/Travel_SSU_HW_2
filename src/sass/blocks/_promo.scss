@@ -1,0 +1,83 @@
+.promo{
+    background-image: url("../img/background/Decore_header.svg") ;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 50%;
+    height: auto;
+    
+
+    &__content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: rem(18);
+        width: prc(1140, 1440);
+
+    }
+    &__item {
+        min-width: 117%;
+        
+    }
+    &__img{
+        position: relative;
+        &_traveller{
+            position: relative;
+            z-index: 1;
+        }
+    }    
+}
+#planeactive {
+        position: absolute;
+        z-index: 3;
+        top: rem(70);
+        right: rem(150);
+        &:hover {
+            animation: plane-rotate 3s linear;
+            
+        }       
+        }
+    
+    #plane{
+        position: absolute;
+        z-index: 0;
+        top: rem(120);
+        right: rem(-330);
+    
+        }
+      
+      @keyframes plane-rotate {
+        0% {
+            transform: translate(-40px,0)
+            
+        }
+        50% {
+            transform: translate(550px,-100px)
+        }  
+        100% {
+            transform: translate(1100px,-250px) 
+        }
+    }
+    
+    
+
+.nav {
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        padding: rem(50) 0 rem(22) ; 
+
+    }
+    &__logo {
+        margin-right: prc(280, 1440);
+    }
+    &__link  {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: em(16);
+            line-height: em(22);
+            color: 	rgb(33, 40, 50); 
+            margin-right: prc(70, 1440);
+    }
+}

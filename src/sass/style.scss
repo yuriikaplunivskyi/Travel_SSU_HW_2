@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap'); */
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -12,6 +12,12 @@
 }
 
 .container {
-    width: 1140px;
+    width: prc(1140, 1440);
     margin: 0 auto;
 }
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/category';
+@import 'blocks/selling';
