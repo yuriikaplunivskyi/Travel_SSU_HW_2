@@ -16,34 +16,48 @@
         font-size: rem(20);
         line-height: rem(30);
         text-transform: uppercase;
-        color: #DF6951;
+        color: $category_before-elem;
         margin-top: rem(130);
-    }
-    &__block{
-        font-family: 'Poppins', normal;
-        font-weight: 600;
-        font-size: rem(18);
-        line-height: rem(27);
-        text-align: center;
-        color: $title-block-color;
     }
     &__offer{
         font-family: 'Volkhov', normal;
         font-weight: 700;
-        font-size: 50px;
-        line-height: 64px;
+        font-size: rem(50);
+        line-height: rem(64);
         text-align: center;
         text-transform: capitalize;
         color: $title-offer-color;
+        &_booking{
+            text-align: start;
+        }
     }
     &__card{
         color: $title-card-color;
         font-family: 'Noto Sans', normal;
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
-        line-height: 27px;
+        font-size: rem(20);
+        line-height: rem(27);
         text-align: center;
+    }
+    &__option{
+        font-family: 'Poppins', normal;
+        font-weight: 700;
+        font-size: rem(16);
+        text-align: start;
+        color: $describtion-text-color;
+    }
+}
+
+.subtitle{
+    font-family: 'Poppins', normal;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: rem(27);
+    text-align: center;
+    color: $title-block-color;
+    &_booking{
+        text-align: start;
     }
 }
 
@@ -52,6 +66,10 @@
     font-weight: 500;
     font-size: rem(16);
     color: $describtion-text-color;
+    &__option{
+        font-weight: 400; 
+        line-height: rem(20);
+    }
 }
 
 .promo__text {
@@ -60,3 +78,39 @@
     width: 75%;
 }
 
+.trip{
+    &__title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: rem(22);
+        letter-spacing: 0.015em;
+        color: $title-trip-color;
+        &_ongoing{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: rem(22);
+            letter-spacing: -0.015em;
+        }
+    }
+    &__text{
+        color: $trip-text-color;
+        letter-spacing: -0.02em;
+        &_ongoing{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: rem(17);
+            letter-spacing: -0.035em;
+        }
+    }
+    &__booking{
+        margin-top: rem(30);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__members img{
+        margin-bottom: rem(5);
+    }
+}

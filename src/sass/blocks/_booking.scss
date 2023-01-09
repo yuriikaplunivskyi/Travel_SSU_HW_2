@@ -1,0 +1,113 @@
+.booking{
+    margin-top: rem(180);
+    &__content{
+        display: grid;
+        grid-gap: rem(80);
+        grid-template-columns: repeat(auto-fit, 500px);
+    }
+    &__option{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        margin-top: rem(30);
+        &_logo{
+            margin: rem(-15) rem(20) 0 0;
+        }
+    }
+    &__block {
+        background-image: url('../img/background/bg_trip.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    &__trip{
+        width: 370px;
+        height: 400px;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+        border-radius: 26px;
+        position: relative;
+        
+    }
+
+    .trip{
+        &__box{
+            margin: rem(20) rem(24.5) rem(30);
+        }
+        &__title{
+            margin-top: rem(25);
+        }
+        &__duration-guid{
+            margin-top: rem(16);
+        }
+        &__icon{
+            margin-top: rem(20);
+            display: flex;
+            justify-content:flex-start;
+            gap: rem(15);
+        }
+        &__ongoing{
+            width: 263px;
+            height: 129px;
+            background: #FFFFFF;
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+            border-radius: rem(18);
+            position: absolute;
+            bottom: rem(70);
+            left: rem(210);
+        }
+
+    }
+    .ongoing{
+        &__box{
+            margin: rem(30);
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: rem(10);
+        }
+        &__img{
+            border-radius: 50px;
+            border: 1px solid green
+        }
+        
+    }
+}
+//копіпаст
+.wrapper{
+    width: rem(156);
+    position: relative;
+    z-index: 5;
+  }
+  .slider {
+      -webkit-appearance: none;
+      width: rem(156);
+      height: 5px;
+      background-color: #ccc;
+      outline: none;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      margin: 12px 0px 5px 0px;
+      cursor: pointer;
+      border-radius: 30px;
+  }
+  
+  .slider:hover {
+      opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+      appearance: none;
+      width: 11px;
+      height: 11px;
+      border-radius: 100%;
+      background: no;
+  }
+  .progress{
+    position: absolute;
+    content:'';
+    width: rem(156);
+    height: 5px;
+    background-color: #8A79DF;
+    top: calc(50%);
+    z-index: 1;
+    border-radius: 30px;
+  }

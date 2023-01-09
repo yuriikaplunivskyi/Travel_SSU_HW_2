@@ -10,6 +10,10 @@
     &__content{
         display: grid;
         grid-template-columns: 50% 50%;
+/*         display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between; */
         margin-top: rem(18);
         width: prc(1140, 1440);
 
