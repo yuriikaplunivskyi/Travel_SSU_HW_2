@@ -2,6 +2,8 @@
     margin-top: rem(180);
     &__content{
         display: grid;
+        align-items: center;
+        justify-content: center;
         grid-gap: rem(80);
         grid-template-columns: repeat(auto-fit, 500px);
     }
@@ -16,8 +18,9 @@
     }
     &__block {
         background-image: url('../img/background/bg_trip.svg');
-        background-position: top;
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     &__trip{
         width: 370px;
@@ -26,12 +29,17 @@
         box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
         border-radius: 26px;
         position: relative;
+        left: rem(40);
+        top: rem(140);
         
     }
 
     .trip{
         &__box{
             margin: rem(20) rem(24.5) rem(30);
+        }
+        &__img{
+            margin-top: rem(20);
         }
         &__title{
             margin-top: rem(25);
@@ -73,6 +81,7 @@
 }
 //копіпаст
 .wrapper{
+    bottom:20px;
     width: rem(156);
     position: relative;
     z-index: 5;
@@ -85,7 +94,7 @@
       outline: none;
       -webkit-transition: .2s;
       transition: opacity .2s;
-      margin: 12px 0px 5px 0px;
+    /*   margin: 12px 0px 5px 0px; */
       cursor: pointer;
       border-radius: 30px;
   }

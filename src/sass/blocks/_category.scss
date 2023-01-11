@@ -9,13 +9,14 @@
     &__content{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-top: rem(65);
     }
     &__card {
             width: rem(250);
             height: rem(300);
+            margin: rem(10);
         &_content{
             display: flex;
             flex-direction:column;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@400;500&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Travel</title>
 </head>
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> 
 
     <section class="category">
         <div class="container">
@@ -236,11 +236,14 @@
                             <div class="ongoing__box">
                                 <img class="ongoing__img" src="img/booking/ongoing_greece.png" alt="city">
                                 <div class="ongoing__content">
-                                    <span class="trip__text_ongoing text">24 people going</span>
-                                    <h6 class="trip__title_ongoing">Trip To Greece</h6>
-
+                                    <span class="trip__text_ongoing text">Ongoing</span>
+                                    <h6 class="trip__title_ongoing">Trip to Rome</h6>
+                                    <div>
+                                        <p class="trip__title_ongoing_input"><span class="trip__text_ongoing_input">40%</span>
+                                             completed
+                                        </p></div>
                                     <div class="wrapper">
-                                        <input type = "range" min = "0" max = "100" value = "40" class = "slider">
+                                        <input type = "range" min = "0" max = "100" value = "40%" class = "slider">
                                         <div class="progress"></div>
                                       </div>
                                 </div>
@@ -253,6 +256,133 @@
         </div>
 
     </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__content">
+                <div class="testimonials__item">
+                    <h4 class="subtitle_booking">Easy and Fast</h4>
+                        <h3 class="title__offer title__offer_booking">Book your next trip in 3 easy steps</h3>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__card">
+                        
+                        <div class="feedback__box">
+                            <img class="feedback__user-img" src="img/testimonials/happywhitepakistani.png" alt="customer">
+                            <p class="feedback__text text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                            <span class="feedback__user-name text">Mike Taylor</span>
+                            <span class="feedback__user-city text">Lahore, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="logos">
+        <div class="container">
+            <div class="logos__content">
+                <img src="icons/logos/axon.png" alt="axon">
+                <img src="icons/logos/jetstar.png" alt="jetstar">
+                <img src="icons/logos/expedia.png" alt="expedia">
+                <img src="icons/logos/qantas.png" alt="qantas">
+                <img src="icons/logos/alitania.png" alt="alitania">
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+
+            <div class="form__content">
+                <img class="form__img" src="../icons/form/paper-plane.svg" alt="paper-plane">
+                <h5 class="text__form subtitle">Subscribe to get information, latest news and other interesting offers about Cobham</h5>
+                
+                <form class="form__wrapper" action="" action="POST">
+
+                    <label>
+                        <input  class="form__email" type="email" name="" required placeholder="&#9993; Your email" id="email"
+                        value=>
+                    </label>
+                    <label>
+                        <input class="form__button"
+                        type="button"
+                        value="Subscribe">
+                    </label>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <div class="footer__company footer__company_logo">Jadoo.</div>
+                    <div class="footer__company footer__company_motto text">Book your trip in minute, get full. Control for much longer.
+                        </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__menu">
+                        <div class="footer__menu_submenu">
+                            <h4 class="submenu__title">Company</h4>
+                                <a href="#" class="submenu__link">About</a>
+                                <a href="#" class="submenu__link">Careers</a>
+                                <a href="#" class="submenu__link">Mobile</a>
+                        </div>
+
+                        <div class="footer__menu_submenu">
+                            <h4 class="submenu__title">Contact</h4>
+                            <a href="#" class="submenu__link">Help/FAQ</a>
+                            <a href="#" class="submenu__link">Press</a>
+                            <a href="#" class="submenu__link">Affilates</a>
+                        </div>
+
+                        <div class="footer__menu_submenu">
+                            <h4 class="submenu__title">More</h4>
+                            <a href="#" class="submenu__link">Airlinefees</a>
+                            <a href="#" class="submenu__link ">Airline</a>
+                            <a href="#" class="submenu__link">Low fare tips</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+
+                </div>
+                <div class="footer__contacts">
+                        <div class="footer__social-network">
+
+                                <a href="#"                    class="footer__social-network_iconlink">
+                                    <img src="icons/footer/facebook.svg" alt="facebook">
+                                </a>
+                                <a id="instagram_bg" href="#"                   class="footer__social-network_iconlink">
+                                   <img  src="icons/footer/instagram.svg"                  alt="instagram"> 
+                                </a>
+                                <a href="#"                class="footer__social-network_iconlink">
+                                    <img src="icons/footer/twitter.svg"                alt="twitter">
+                                </a>
+                        </div>
+
+                        <span class="footer__app_text text ">Discover our app</span>
+                        <div class="footer__app">
+                            <a href="" class="footer__app_icon-link">
+                                <img src="icons/footer/googleplay.svg" alt="googleplay">
+                            </a>
+                            <a href="" class="footer__app_icon-link">
+                                <img src="icons/footer/applestore.svg" alt="applestore">
+                            </a>
+                        </div>
+                </div>
+
+            </div>
+            <span id="rights" class="text">All rights reserved@jadoo.co</span>
+        </div>
+    </footer>
+    <!-- //cypepast -->
     <script>
         const slider = document.querySelector('.slider');
         const progress = document.querySelector('.progress');
@@ -260,6 +390,6 @@
     slider.oninput = function(){
                     progress.style.width = `${this.value}%`;
                 };                                              
-    </script>
+    </script> 
 </body>
 </html>

@@ -59,6 +59,13 @@
     &_booking{
         text-align: start;
     }
+    &__form{
+        font-weight: 600;
+        font-size: rem(33);
+        line-height: rem(54);
+        text-align: center;
+        width: 80%;
+    }
 }
 
 .text{
@@ -69,6 +76,14 @@
     &__option{
         font-weight: 400; 
         line-height: rem(20);
+    }
+    &__form{
+        font-weight: 600;
+        font-size: rem(33);
+        line-height: rem(54);
+        text-align: center;
+        width: 80%;
+        margin-top: rem(70);
     }
 }
 
@@ -92,6 +107,13 @@
             font-size: 18px;
             line-height: rem(22);
             letter-spacing: -0.015em;
+
+            &_input{
+                font-family: 'Poppins';
+                font-size: rem(14);
+                line-height: rem(17);
+                letter-spacing: -0.055em;
+            }
         }
     }
     &__text{
@@ -102,6 +124,12 @@
             font-size: 14px;
             line-height: rem(17);
             letter-spacing: -0.035em;
+            &_input{
+                font-size: rem(14);
+                line-height: rem(17);
+                letter-spacing: -0.055em;
+                color: #8A79DF;
+            }
         }
     }
     &__booking{

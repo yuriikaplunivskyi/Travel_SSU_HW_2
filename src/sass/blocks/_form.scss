@@ -1,0 +1,96 @@
+
+
+.form{
+    margin-top: rem(125) ;
+    height: auto;
+    background: url('../img/background/bg-cross_form.svg');
+    background-position: 95% 105%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    min-height: rem(500);
+    position: relative;
+    z-index: -1;
+
+
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        min-height: 80%;
+        margin: rem(80) rem(90);
+        padding: rem(70) rem(150);
+        border-radius: 129px 20px  20px  20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+/*         background: url('../img/background/bg_form-right.svg') no-repeat top right/ 18%,url('../img/background/bg_form-left.svg') no-repeat bottom left/18%, rgb(223, 215, 249, 0.2) ;
+        background: url('/src/img/background/bg_form-right.svg'); */
+        @include subscribe_background;
+        }
+    
+    &__img{
+        position: absolute;
+        top: rem(-20);
+        right: rem(-20);
+    }
+/*     &__wrapper::after{
+        content:'';
+        background: url('../img/background/bg-cross_form.svg');
+        background-position: 95% bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 153px;
+        height: 166px;
+        z-index: -1;
+        right: 5%;
+        bottom: -17%;
+    } */
+    &__wrapper{
+        margin-top: rem(70);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__email{
+        width: rem(421);
+        height:rem(68);
+        border:none;
+        border-radius: 10px;
+        margin-right: rem(25);
+        text-indent: rem(20);
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #39425D;
+  
+    }
+    &__button{
+        width: rem(180);
+        height: rem(68);
+        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        border-radius: 10px;
+        font-family: 'Open Sans', normal;
+        font-weight: 600;
+        font-size: rem(17);
+        line-height: rem(23);
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+/* .form__content::before{
+    content:'';
+
+    position: absolute;
+    width: 153px;
+    height: 166px;
+    z-index: 0;
+     right: 5%;
+    bottom: -17%;
+    right: 0;
+    bottom: 0;
+} */

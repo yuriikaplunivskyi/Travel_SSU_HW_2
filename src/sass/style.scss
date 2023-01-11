@@ -9,11 +9,13 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    width: auto;
 }
 
 .container {
-    width: prc(1140, 1440);
+    width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
 @import 'blocks/promo';
@@ -22,3 +24,7 @@
 @import 'blocks/category';
 @import 'blocks/selling';
 @import 'blocks/booking';
+@import 'blocks/testimonials';
+@import 'blocks/logos';
+@import 'blocks/form';
+@import 'blocks/footer';
