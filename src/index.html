@@ -9,10 +9,19 @@
     <title>Travel</title>
 </head>
 <body>
-    <header class="promo">
+   <header class="promo">
         <div class="container">
+             <div class="wrapper">
+                <img class="nav__logo" src="img/Logo_header.svg" alt="logo" >
+                <input type="checkbox" id="check-menu">
+                <label class="burger-label" for="check-menu">
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+                </label>
                 <nav class="nav__menu">
-                    <img class="nav__logo" src="img/Logo_header.svg" alt="logo" >
+
                     
                     <a class="nav__link" href="#">Desitnations</a>
                         
@@ -29,9 +38,11 @@
                     <button class="nav__button_singup" onclick="location.href='#';">
                         <span>Sign up</span>
                     </button>
-                    <option class="nav__lang" value="eng"> EN </option>
-                    <img class="nav__lang_choice" src="icons/arrow.png" alt="dropdown">
+                    
+                    <div class="nav__lang"><option  value="eng"> EN </option>
+                        <img class="nav__lang_choice" src="icons/arrow.png" alt="dropdown"></div>
                 </nav>
+            </div>
 
             <div class="promo__content">
                 <div class="promo__item">
@@ -242,8 +253,8 @@
                                         <p class="trip__title_ongoing_input"><span class="trip__text_ongoing_input">40%</span>
                                              completed
                                         </p></div>
-                                    <div class="wrapper">
-                                        <input type = "range" min = "0" max = "100" value = "40%" class = "slider">
+                                    <div class="wrappage">
+                                        <input type = "range" min = "0" max = "100" value = "0.4" class = "slider">
                                         <div class="progress"></div>
                                       </div>
                                 </div>
@@ -297,21 +308,25 @@
         <div class="container">
 
             <div class="form__content">
-                <img class="form__img" src="../icons/form/paper-plane.svg" alt="paper-plane">
-                <h5 class="text__form subtitle">Subscribe to get information, latest news and other interesting offers about Cobham</h5>
-                
-                <form class="form__wrapper" action="" action="POST">
+                <img class="form__img" src="icons/form/paper-plane.svg" alt="paper-plane">
 
-                    <label>
-                        <input  class="form__email" type="email" name="" required placeholder="&#9993; Your email" id="email"
-                        value=>
+                
+                
+                <form class="form__wrapper" action="POST">
+                    <h5 class="text__form subtitle">Subscribe to get information, latest news and other interesting offers about Cobham</h5>
+                    <label class="form__lable">
+                        <input  class="form__email" type="email"  required placeholder="&#9993; Your email" id="email"
+                        >
                     </label>
-                    <label>
+                    <label class="form__lable">
                         <input class="form__button"
                         type="button"
                         value="Subscribe">
                     </label>
                 </form>
+                <img  src="img/background/bg_form-right.svg" alt="decor" 
+                class="form-decore form-decore_right">
+                <img  src="img/background/bf_form-left.svg" alt="deco" class="form-decore form-decore_left">
 
             </div>
 
@@ -356,13 +371,13 @@
                 <div class="footer__contacts">
                         <div class="footer__social-network">
 
-                                <a href="#"                    class="footer__social-network_iconlink">
+                                <a href="https://deepstatemap.live"                    class="footer__social-network_iconlink">
                                     <img src="icons/footer/facebook.svg" alt="facebook">
                                 </a>
-                                <a id="instagram_bg" href="#"                   class="footer__social-network_iconlink">
+                                <a id="instagram_bg" href="https://liveuamap.com/en"                   class="footer__social-network_iconlink">
                                    <img  src="icons/footer/instagram.svg"                  alt="instagram"> 
                                 </a>
-                                <a href="#"                class="footer__social-network_iconlink">
+                                <a href="https://twitter.com/"                class="footer__social-network_iconlink">
                                     <img src="icons/footer/twitter.svg"                alt="twitter">
                                 </a>
                         </div>
@@ -382,7 +397,7 @@
             <span id="rights" class="text">All rights reserved@jadoo.co</span>
         </div>
     </footer>
-    <!-- //cypepast -->
+    <!-- //copypast -->
     <script>
         const slider = document.querySelector('.slider');
         const progress = document.querySelector('.progress');

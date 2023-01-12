@@ -14,6 +14,9 @@
         margin-top: rem(65);
     }
     &__card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: rem(250);
             height: rem(300);
             margin: rem(10);

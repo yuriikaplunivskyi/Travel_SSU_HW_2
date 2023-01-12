@@ -1,0 +1,137 @@
+@use "sass:math";
+@media (max-width: 1200px){
+    .container {
+        width: 90%;
+    }
+    .title__promo {
+        font-size: 5.25rem;
+    }
+    .promo{
+        
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__img {
+            position: relative;
+            width: 80%;
+            top: 0;
+            left: 0;
+            &_traveller {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                right: 10%;
+                top: 0;
+            }
+        }
+        &__item{
+            width: 100%;
+        }
+    }
+    #plane {
+        position: absolute;
+        z-index: 0;
+        top: 7.5rem;
+        right: 3.5rem;
+    }
+    #planeactive {
+        left: 10%;
+    }
+
+    #check-menu:checked ~.nav__menu{
+        display: block;////alarm blocke
+    }
+    .burger-label{
+        display: block;
+    }
+}
+
+
+@media (max-width: 992px){
+    .container {
+        max-width: 90%;
+    }
+    @function rem($px) {
+        $result: math.div($px, 14) + rem;
+        @return $result;
+    }
+    .container{
+        width: 90%;
+        padding: 0 10px;
+    }
+    #check-menu{
+        display: none;
+    }
+
+
+    .text__form {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 2.375rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+    .form{
+        &__content {
+            flex-wrap: wrap;
+            height: rem(400);
+            padding: rem(10) rem(50);
+        } 
+        &__wrapper{
+            gap: 30px;
+        }
+        &__email{
+            width: 100%;
+        }
+    }
+    #planeactive {
+        left: 10%;
+    }
+
+
+
+}
+
+
+@media (max-width: 768px){
+
+    @function rem($px) {
+        $result: math.div($px, 12) + rem;
+        @return $result;
+    }
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+    .promo__img_traveller {
+        left: 0;
+        height: 70%;
+    }
+    #planeactive {
+        top: -3%;
+        left: 0;
+    }
+    #plane {
+            position: absolute;
+            z-index: 0;
+            top: 7.5rem;
+            right: -3.5rem;
+    }
+
+}
+@media (max-width: 576px) {
+    @function rem($px) {
+        $result: math.div($px, 10) + rem;
+        @return $result;
+    }
+    .logos__content {
+        justify-content: center;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+}
