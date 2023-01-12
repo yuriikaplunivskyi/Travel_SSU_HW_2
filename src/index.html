@@ -11,25 +11,59 @@
 <body>
    <header class="promo">
         <div class="container">
-             <div class="wrapper">
+<!--             <nav>
+                
+                    <ul class="menu">
+                        <li class="menu_item">
+                            <a class="menu_link" href="#">Desitnations</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#require" class="menu_link">Hotels</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#require" class="menu_link">Flights</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">Bookings</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">
+                                <button class="nav__button" onclick="location.href='#';">
+                                <span>Login</span>
+                            </button></a>
+                        </li>
+                        <li class="menu_item">
+                            <button class="nav__button_singup" onclick="location.href='#';">
+                                <span>Sign up</span>
+                            </button>
+                        </li>
+                        <li class="menu_item">
+                            <div class="nav__lang"><option  value="eng"> EN </option>
+                                <img class="nav__lang_choice" src="icons/arrow.png" alt="dropdown"></div>
+                        </li>
+                    </ul>
+                
+
+            </nav> -->
+              <div class="wrapper">
                 <img class="nav__logo" src="img/Logo_header.svg" alt="logo" >
-                <input type="checkbox" id="check-menu">
+<!--                 <input type="checkbox" id="check-menu">
                 <label class="burger-label" for="check-menu">
                 <div class="burger-line first"></div>
                 <div class="burger-line second"></div>
                 <div class="burger-line third"></div>
                 <div class="burger-line fourth"></div>
-                </label>
+                </label> -->
                 <nav class="nav__menu">
 
                     
-                    <a class="nav__link" href="#">Desitnations</a>
+                    <a class="nav__link" href="#Desitnations">Desitnations</a>
                         
-                    <a class="nav__link" href="#">Hotels</a>    
+                    <a class="nav__link" href="#Hotels">Hotels</a>    
                         
                     <a class="nav__link" href="#">Flights</a>
                         
-                    <a class="nav__link" href="#">Bookings</a>
+                    <a class="nav__link" href="#Bookings">Bookings</a>
                     
                     <button class="nav__button" onclick="location.href='#';">
                         <span>Login</span>
@@ -42,6 +76,11 @@
                     <div class="nav__lang"><option  value="eng"> EN </option>
                         <img class="nav__lang_choice" src="icons/arrow.png" alt="dropdown"></div>
                 </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="promo__content">
@@ -115,7 +154,7 @@
         </div>
     </section>
 
-    <section class="selling">
+    <section id="Desitnations" class="selling">
         <div class="container">
             <h4 class="subtitle">Top Selling</h4>
             <h3 class="title__offer">Top Destinations</h3>
@@ -174,7 +213,7 @@
         </div>
     </section>
 
-    <section class="booking">
+    <section id="Bookings" class="booking">
         <div class="container">
             <div class="booking__content">
 
@@ -292,7 +331,7 @@
         </div>
     </section>
 
-    <section class="logos">
+    <section id="Hotels" class="logos">
         <div class="container">
             <div class="logos__content">
                 <img src="icons/logos/axon.png" alt="axon">
