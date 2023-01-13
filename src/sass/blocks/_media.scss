@@ -19,6 +19,10 @@
     .nav__menu:hover > :not(:hover) {
         opacity: .4;
     }
+    .nav__menu {
+        justify-content: center;
+        gap: 30px;
+    }
     .promo{
         
         &__content {
@@ -52,12 +56,70 @@
         left: 10%;
     }
 
-    #check-menu:checked ~.nav__menu{
+/*    #check-menu:checked ~.nav__menu{
         display: block;////alarm blocke
     }
-/*     .burger-label{
+     .burger-label{
         display: block;
     } */
+    .menu{
+        position: fixed;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* text-indent: rem(40); */
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 80vh;
+        padding: 20px 15px;
+        background-color: rgba(230, 226, 226, 0.953);
+        border-radius: 10px;
+        transition: .5s all;
+        & a{
+            font-size: rem(25);
+        }
+        &_item{
+            padding-right: 0;
+        }
+        &_active{
+            left: 0;
+        }
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: rem(10);
+        top: rem(50);
+        transform: translateY(-50%);
+        width: rem(30);
+        height: rem(30);
+        & span {
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: rgb(23, 23, 23);
+            margin-bottom: 6px;
+            transition: .5s all;
+        }
+        &_active{
+
+             & span{
+                margin-bottom: -3px;
+            
+                    &:first-child{
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:last-child{ 
+                        transform:translateY(3px) rotate(-45deg);
+                    }
+                }
+            }
+    }
 }
 
 
@@ -132,6 +194,18 @@
             top: 7.5rem;
             right: -3.5rem;
     }
+    @keyframes plane-rotate {
+        0% {
+            transform:rotate(9deg) translate(0,0);
+            
+        }
+        25% {
+            transform:  rotate(180deg)  scale(1.2) translate(550px,-600px);
+        } 
+        100% {
+            transform:rotate(9deg) scale(.2) translate(300px,-390px);
+        } 
+    }
 
 }
 @media (max-width: 576px) {
@@ -146,5 +220,38 @@
         width: 100%;
         padding: 0 10px;
     }
-
+    .booking__content {
+        display: grid;
+        align-items: center;
+        place-items: center;
+        grid-gap: 5rem;
+        grid-template-columns: repeat(auto-fit,400px);
+    }
+    .testimonials {
+        margin-top: 20.5rem;
+    }
+    .booking__trip{
+        left: 0.5rem;
+    }
+    .booking .trip__ongoing {
+        width: 240px;
+        height: 130px;
+        bottom: 4.625rem;
+        left: 10.5rem;
+    }
+    .slider {
+        width: 80%;
+    }
+    .progress{
+        width:40% ;
+    }
+    .testimonials__card {
+        margin: 0 auto;
+        width: 80%;
+        height: 319px;
+    }
+    .text__form {
+        font-weight: 600;
+        font-size: 16px;
+    }
 }

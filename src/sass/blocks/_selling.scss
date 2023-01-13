@@ -54,8 +54,6 @@
     }
     #europe{
         background-image: url('../img/selling/europe.png');
-    }
-    .selling__card_europe{
         position: relative;
         z-index: 99;
         &::after{
@@ -64,7 +62,11 @@
             left: 280px;
             bottom: 40px;
             z-index: -1;
+            opacity: 0.3;
         }
+    }
+    .selling__card_europe{
+
     }
 
 

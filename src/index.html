@@ -11,69 +11,28 @@
 <body>
    <header class="promo">
         <div class="container">
-<!--             <nav>
-                
-                    <ul class="menu">
-                        <li class="menu_item">
-                            <a class="menu_link" href="#">Desitnations</a>
-                        </li>
-                        <li class="menu_item">
-                            <a href="#require" class="menu_link">Hotels</a>
-                        </li>
-                        <li class="menu_item">
-                            <a href="#require" class="menu_link">Flights</a>
-                        </li>
-                        <li class="menu_item">
-                            <a href="#" class="menu_link">Bookings</a>
-                        </li>
-                        <li class="menu_item">
-                            <a href="#" class="menu_link">
-                                <button class="nav__button" onclick="location.href='#';">
-                                <span>Login</span>
-                            </button></a>
-                        </li>
-                        <li class="menu_item">
-                            <button class="nav__button_singup" onclick="location.href='#';">
-                                <span>Sign up</span>
-                            </button>
-                        </li>
-                        <li class="menu_item">
-                            <div class="nav__lang"><option  value="eng"> EN </option>
-                                <img class="nav__lang_choice" src="icons/arrow.png" alt="dropdown"></div>
-                        </li>
-                    </ul>
-                
-
-            </nav> -->
               <div class="wrapper">
                 <img class="nav__logo" src="img/Logo_header.svg" alt="logo" >
-<!--                 <input type="checkbox" id="check-menu">
-                <label class="burger-label" for="check-menu">
-                <div class="burger-line first"></div>
-                <div class="burger-line second"></div>
-                <div class="burger-line third"></div>
-                <div class="burger-line fourth"></div>
-                </label> -->
-                <nav class="nav__menu">
+                <nav class="menu nav__menu">
 
                     
-                    <a class="nav__link" href="#Desitnations">Desitnations</a>
+                    <a class="nav__link menu_item" href="#Desitnations">Desitnations</a>
                         
-                    <a class="nav__link" href="#Hotels">Hotels</a>    
+                    <a class="nav__link menu_item" href="#Hotels">Hotels</a>    
                         
-                    <a class="nav__link" href="#">Flights</a>
+                    <a class="nav__link menu_item" href="#">Flights</a>
                         
-                    <a class="nav__link" href="#Bookings">Bookings</a>
+                    <a class="nav__link menu_item" href="#Bookings">Bookings</a>
                     
-                    <button class="nav__button" onclick="location.href='#';">
+                    <button class="nav__button menu_item" onclick="location.href='#';">
                         <span>Login</span>
                     </button>
             
-                    <button class="nav__button_singup" onclick="location.href='#';">
+                    <button class="nav__button_singup menu_item" onclick="location.href='#';">
                         <span>Sign up</span>
                     </button>
                     
-                    <div class="nav__lang"><option  value="eng"> EN </option>
+                    <div class="nav__lang menu_item"><option  value="eng"> EN </option>
                         <img class="nav__lang_choice" src="icons/arrow.png" alt="dropdown"></div>
                 </nav>
                 <div class="hamburger">
@@ -218,7 +177,7 @@
             <div class="booking__content">
 
                 <div class="booking__item">
-                    <h4 class="subtitle_booking">Easy and Fast</h4>
+                    <h4 class="subtitle subtitle_booking">Easy and Fast</h4>
                     <h3 class="title__offer title__offer_booking">Book your next trip 
                         in 3 easy steps</h3>
 
@@ -265,7 +224,7 @@
                     <div class="booking__trip">
                         <div class="trip__box">
                             <img class="trip__img" src="img/booking/greece.png" alt="greece">
-                            <h6 class="trip__title">Trip To Greece</h6>
+                            <h6 class=" trip__title">Trip To Greece</h6>
                             <span class="trip__text text">14-29 June| by Robbin joseph</span>
                             <div class="trip__icon">
                                 <img src="icons/booking/trip/leaf.svg" alt="leaf">
@@ -311,7 +270,7 @@
         <div class="container">
             <div class="testimonials__content">
                 <div class="testimonials__item">
-                    <h4 class="subtitle_booking">Easy and Fast</h4>
+                    <h4 class="subtitle subtitle_booking">Testimonials</h4>
                         <h3 class="title__offer title__offer_booking">Book your next trip in 3 easy steps</h3>
                 </div>
                 <div class="testimonials__item">
@@ -366,9 +325,9 @@
                 <img  src="img/background/bg_form-right.svg" alt="decor" 
                 class="form-decore form-decore_right">
                 <img  src="img/background/bf_form-left.svg" alt="deco" class="form-decore form-decore_left">
-
+                
             </div>
-
+<!--             <img src="img/background/bg-cross_form.svg" alt="crossbottom" class="background_cross"> -->
         </div>
     </section>
 
@@ -436,14 +395,7 @@
             <span id="rights" class="text">All rights reserved@jadoo.co</span>
         </div>
     </footer>
-    <!-- //copypast -->
-    <script>
-        const slider = document.querySelector('.slider');
-        const progress = document.querySelector('.progress');
+    <script src="js/script.js"></script>
 
-    slider.oninput = function(){
-                    progress.style.width = `${this.value}%`;
-                };                                              
-    </script> 
 </body>
 </html>

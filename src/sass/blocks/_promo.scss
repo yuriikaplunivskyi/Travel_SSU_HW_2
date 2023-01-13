@@ -44,23 +44,26 @@
     #plane{
         position: absolute;
         z-index: 0;
-        top: 5%;
-        right: 0;
+        top: 10%;
+        left:100%;
     
         }
       
-      @keyframes plane-rotate {
-        0% {
-            transform: translate(-40px,0)
-            
+        @keyframes plane-rotate {
+            0% {
+                transform: rotate(9deg) translate(0,0);
+                
+            }
+            50% {
+                transform:  translate(550px,-150px) scale(.5);
+            }  
+            100% {
+                transform:  translate(970px,-300px) scale(.2);
+                opacity: .3;
+
+            }
         }
-        50% {
-            transform: translate(550px,-100px)
-        }  
-        100% {
-            transform: translate(1100px,-250px) 
-        }
-    }
+    
 
     .nav {
         &__menu {
@@ -116,92 +119,10 @@
         position: relative;
         padding: rem(30) 0 rem(22) ;
     }
-/*     #check-menu{
+
+    .hamburger{
         display: none;
     }
-    .burger-label{
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        z-index: 1000;
-        line-height: 40px;
-        margin-top: 28px;
-    }
-    .burger-line{
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        width: 35px;
-        height: 2px;
-        background-color: $title-offer-color ;
-        transition: .5s all;
-    }
-    .second, .third{
-        top: 18px;
-    }
-    .fourth{
-        top: 28px;
-    }
-    .nav{
-        &__menu{
-            display: none;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            transform: translateY(100%);
-            background-color:#ffffff;
-            max-height: 0;
-            font-size: 0;
-            overflow: hidden;
-            transition: .5s all;
-            border-radius: 10px;
-        }
-        &__link{
-            display: block;
-            width: 100%;
-            padding: 10px;
-            text-decoration: none;
-            border-top: 1px solid rgb(33, 40, 50);
-        }
-        &__button, &__lang{
-            margin: 10px;
-            border-top: 1px solid rgb(33, 40, 50);
-        }
-        &__lang{
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            & img{
-                object-fit: contain;
-            }
-        }
-        
-    }
-     #check-menu{
-        display: none;
-    }
-    #check-menu:checked ~.nav__menu{
-        max-height: 500px;
-        font-size: rem(16);
-        display: none;////alarm blocke
-    }
-    #check-menu:checked ~ .first{
-        display: none;
-    }
-    #check-menu:checked ~ .second{
-        transform: rotate(45deg);
-    }
-    #check-menu:checked ~ .third{
-        transform: rotate(-45deg);
-    }
-    #check-menu:checked ~ .fourth{
-        display: none;
-    } */
 
 
 
