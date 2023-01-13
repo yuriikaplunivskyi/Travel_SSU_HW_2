@@ -120,6 +120,9 @@
                 }
             }
     }
+    .form__wrapper{
+        gap:rem(15);
+    }
 }
 
 
@@ -165,7 +168,7 @@
         left: 10%;
     }
 
-
+    
 
 }
 
@@ -206,12 +209,18 @@
             transform:rotate(9deg) scale(.2) translate(300px,-390px);
         } 
     }
+    .form__wrapper{
+        gap:rem(20);
+    }
 
 }
 @media (max-width: 576px) {
     @function rem($px) {
         $result: math.div($px, 10) + rem;
         @return $result;
+    }
+    .form__wrapper{
+        gap:rem(10);
     }
     .logos__content {
         justify-content: center;
@@ -253,5 +262,8 @@
     .text__form {
         font-weight: 600;
         font-size: 16px;
+    }
+    .form-decore_left{
+        width: 100%;
     }
 }
