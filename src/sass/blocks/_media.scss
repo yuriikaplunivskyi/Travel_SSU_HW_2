@@ -74,7 +74,7 @@
         width: 50%;
         height: 80vh;
         padding: 20px 15px;
-        background-color: rgba(230, 226, 226, 0.953);
+        background-color: $color-burger-menu;
         border-radius: 10px;
         transition: .5s all;
         & a{
@@ -138,9 +138,6 @@
         width: 90%;
         padding: 0 10px;
     }
-/*     #check-menu{
-        display: none;
-    } */
 
 
     .text__form {
@@ -196,18 +193,6 @@
             z-index: 0;
             top: 7.5rem;
             right: -3.5rem;
-    }
-    @keyframes plane-rotate {
-        0% {
-            transform:rotate(9deg) translate(0,0);
-            
-        }
-        25% {
-            transform:  rotate(180deg)  scale(1.2) translate(550px,-600px);
-        } 
-        100% {
-            transform:rotate(9deg) scale(.2) translate(300px,-390px);
-        } 
     }
     .form__wrapper{
         gap:rem(20);
